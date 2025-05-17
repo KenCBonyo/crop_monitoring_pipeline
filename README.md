@@ -33,6 +33,7 @@ This project is designed to:
 
 ## 📁 Project Structure
 ---
+```bash
 crop_monitoring_pipeline/
 │
 ├── docker-compose.yaml              # Main orchestration file (Docker services)
