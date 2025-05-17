@@ -30,6 +30,17 @@ This project is designed to:
 | **Docker / Docker Compose** | Containerization and service orchestration |
 
 ---
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Docker Desktop installed
+- Basic understanding of Docker, Spark, and Airflow
+
+### 1. Clone the repo
+
 
 ## 📁 Project Structure
 ---
@@ -54,21 +65,6 @@ crop_monitoring_pipeline/
 ├── postgres/                        # PostgreSQL
 
 ---
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Docker Desktop installed
-- Basic understanding of Docker, Spark, and Airflow
-
-### 1. Clone the repo
-
-```bash
-git clone https://github.com/KenCBonyo/crop_monitoring_pipeline.git
-cd crop_monitoring_pipeline
-
 
 DATA LAYER (external)                # Not stored in the repo
 │
@@ -76,3 +72,8 @@ DATA LAYER (external)                # Not stored in the repo
 ├── S3 / MinIO                         # Cloud/object storage (Iceberg tables, Parquet files)
 ├── PostgreSQL (EC2)                 # Source of polygons and metadata
 └── Local disk (optional dev env)    # For testing with small datasets
+
+
+```bash
+git clone https://github.com/KenCBonyo/crop_monitoring_pipeline.git
+cd crop_monitoring_pipeline
