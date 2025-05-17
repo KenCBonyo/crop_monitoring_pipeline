@@ -38,6 +38,9 @@ This project is designed to:
 
 - Docker Desktop installed
 - Basic understanding of Docker, Spark, and Airflow
+- git clone https://github.com/KenCBonyo/crop_monitoring_pipeline.git
+- cd crop_monitoring_pipeline
+
 
 ### 1. Clone the repo
 
@@ -72,8 +75,3 @@ DATA LAYER (external)                # Not stored in the repo
 ├── S3 / MinIO                         # Cloud/object storage (Iceberg tables, Parquet files)
 ├── PostgreSQL (EC2)                 # Source of polygons and metadata
 └── Local disk (optional dev env)    # For testing with small datasets
-
-
-```bash
-git clone https://github.com/KenCBonyo/crop_monitoring_pipeline.git
-cd crop_monitoring_pipeline
