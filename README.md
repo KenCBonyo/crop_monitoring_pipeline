@@ -32,7 +32,7 @@ This project is designed to:
 ---
 
 ## 📁 Project Structure
-
+---
 crop_monitoring_pipeline/
 │
 ├── docker-compose.yaml              # Main orchestration file (Docker services)
@@ -52,7 +52,7 @@ crop_monitoring_pipeline/
 │
 ├── postgres/                        # PostgreSQL
 
-
+---
 ---
 
 ## 🚀 Getting Started
