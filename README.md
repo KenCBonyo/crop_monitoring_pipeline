@@ -35,27 +35,22 @@ This project is designed to:
 
 crop_monitoring_pipeline/
 │
-├── docker-compose.yaml # Main orchestration file
+├── docker-compose.yaml              # Main orchestration file (Docker services)
 │
-├── spark/
-│ ├── jobs/ # PySpark scripts
-│ ├── Dockerfile # Spark image with Sedona & Iceberg
-│ └── requirements.txt # Python dependencies for Spark jobs
+├── spark/                           # Spark-related files
+│   ├── jobs/                        # PySpark scripts (e.g., extract_polygons.py)
+│   ├── Dockerfile                   # Custom Spark image with Sedona & Iceberg
+│   └── requirements.txt             # Python dependencies for Spark jobs
 │
-├── airflow/
-│ ├── dags/ # Airflow DAGs
-│ └── requirements.txt # Extra providers/plugins for Airflow
+├── airflow/                         # Apache Airflow configuration
+│   ├── dags/                        # DAG definitions (e.g., main_pipeline_dag.py)
+│   └── requirements.txt             # Extra providers/plugins for Airflow (e.g., Postgres, HTTP)
 │
-├── python_scripts/
-│ ├── api_calls/ # Non-Spark scripts (e.g., API calls)
-│ └── utils/ # Helper functions
+├── python_scripts/                  # Non-Spark logic
+│   ├── api_calls/                   # Scripts for external APIs (e.g., Visual Crossing, CropHelp)
+│   └── utils/                       # Helper functions and shared utilities
 │
-├── postgres/
-│ └── init.sql # Optional DB setup script
-│
-├── minio/ # Optional local S3 emulation
-│
-└── README.md # This file
+├── postgres/                        # PostgreSQL
 
 
 ---
@@ -70,5 +65,5 @@ crop_monitoring_pipeline/
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/agri-pipeline.git 
+git clone https://github.com/KenCBonyo/crop_monitoring_pipeline.git
 cd crop_monitoring_pipeline
