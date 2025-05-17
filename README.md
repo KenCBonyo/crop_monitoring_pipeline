@@ -67,3 +67,11 @@ crop_monitoring_pipeline/
 ```bash
 git clone https://github.com/KenCBonyo/crop_monitoring_pipeline.git
 cd crop_monitoring_pipeline
+
+
+DATA LAYER (external)                # Not stored in the repo
+│
+├── HDFS                             # Distributed file system (Hadoop cluster)
+├── S3 / MinIO                         # Cloud/object storage (Iceberg tables, Parquet files)
+├── PostgreSQL (EC2)                 # Source of polygons and metadata
+└── Local disk (optional dev env)    # For testing with small datasets
